@@ -13,6 +13,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/backupmigrate/backup_migrate_core"
         }
     ],
     "require": {
@@ -22,7 +26,10 @@
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
         "drupal/console": "~1.0",
-        "drupal/disqus": "1.x-dev"
+        "drupal/disqus": "1.x-dev",
+        "backupmigrate/core": "dev-master",
+        "psr/log": "dev-master",
+        "drupal/backup_migrate": "4.x-dev"
     },
     "require-dev": {
         "behat/mink": "~1.7",

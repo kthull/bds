@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "474db6b77daf65b518221eb9728058a6",
-    "content-hash": "57058704a17858171d7bc21258079693",
+    "hash": "7e29b7f1c0e52893991f345fedb00d1b",
+    "content-hash": "38681d191729a32e7295931e8fa6f621",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -111,6 +111,52 @@
                 "stack"
             ],
             "time": "2016-08-01 12:05:04"
+        },
+        {
+            "name": "backupmigrate/core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/backupmigrate/backup_migrate_core.git",
+                "reference": "135e4fffbc624dd2e07fc617def43183954f7ae4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/backupmigrate/backup_migrate_core/zipball/135e4fffbc624dd2e07fc617def43183954f7ae4",
+                "reference": "135e4fffbc624dd2e07fc617def43183954f7ae4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/log": "dev-master"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.*",
+                "phpunit/dbunit": "~1.4",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BackupMigrate\\Core\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "BackupMigrate\\Core\\Tests\\": "tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Ronan Dowling"
+                }
+            ],
+            "description": "Backup and Migrate",
+            "support": {
+                "source": "https://github.com/backupmigrate/backup_migrate_core/tree/master",
+                "issues": "https://github.com/backupmigrate/backup_migrate_core/issues"
+            },
+            "time": "2016-05-05 15:45:57"
         },
         {
             "name": "composer/installers",
@@ -1092,6 +1138,56 @@
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
             "time": "2016-11-05 10:46:44"
+        },
+        {
+            "name": "drupal/backup_migrate",
+            "version": "dev-4.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/backup_migrate",
+                "reference": "83e694bfae7ab83d77aaacef8cc711b46d7d9571"
+            },
+            "require": {
+                "backupmigrate/core": "dev-master",
+                "drupal/core": "~8.0",
+                "php": ">=5.4.0",
+                "psr/log": "dev-master"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.x-dev",
+                    "datestamp": "1462817924"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BackupMigrate\\Drupal\\": "src"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ronan Dowling",
+                    "homepage": "https://www.drupal.org/user/19044"
+                },
+                {
+                    "name": "ronan",
+                    "homepage": "https://www.drupal.org/user/72815"
+                }
+            ],
+            "description": "Backup and Migrate Drupal Module",
+            "homepage": "https://www.drupal.org/project/backup_migrate",
+            "support": {
+                "source": "http://cgit.drupalcode.org/backup_migrate"
+            },
+            "time": "2016-05-09 18:14:40"
         },
         {
             "name": "drupal/console",
@@ -2513,7 +2609,7 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
@@ -5957,7 +6053,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/disqus": 20
+        "drupal/disqus": 20,
+        "backupmigrate/core": 20,
+        "psr/log": 20,
+        "drupal/backup_migrate": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
