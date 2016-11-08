@@ -1,13 +1,14 @@
-uuid: 5f071324-28e5-4b6f-ab98-48934dac0d1c
+uuid: 9521fe18-1201-42e9-bae5-5809a3effd28
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
-    - field.field.node.article.disqus
+    - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - image.style.medium
     - node.type.article
   module:
     - image
@@ -21,28 +22,30 @@ bundle: article
 mode: teaser
 content:
   body:
-    label: hidden
-    weight: 0
     type: text_summary_or_trimmed
+    weight: 0
     settings:
       trim_length: 600
     third_party_settings: {  }
-  field_image:
     label: hidden
-    weight: -1
+  field_image:
     type: image
+    weight: -1
     settings:
-      image_style: ''
-      image_link: ''
+      image_style: medium
+      image_link: content
     third_party_settings: {  }
+    label: hidden
   field_tags:
-    label: above
-    weight: 10
     type: entity_reference_label
+    weight: 10
     settings:
       link: true
     third_party_settings: {  }
+    label: above
   links:
     weight: 100
 hidden:
-  disqus: true
+  comment: true
+  field_image: true
+  field_tags: true

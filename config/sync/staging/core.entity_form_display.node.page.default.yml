@@ -1,4 +1,4 @@
-uuid: efbe1297-34fb-4a71-8bf2-6b8a6f46b302
+uuid: 5fd5f729-4e9e-483f-9a7d-a0c0aa663e3b
 langcode: en
 status: true
 dependencies:
@@ -16,8 +16,8 @@ bundle: page
 mode: default
 content:
   body:
-    weight: -4
     type: text_textarea_with_summary
+    weight: 31
     settings:
       rows: 9
       summary_rows: 3

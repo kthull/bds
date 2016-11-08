@@ -1,10 +1,10 @@
-uuid: b8b6da3d-b59c-47bf-9a3a-8b6e427aa164
+uuid: fb7b3285-b4ac-4e31-a450-909af9276fc1
 name: 'Blue Drop Shop'
 mail: kthull@bluedropshop.com
 slogan: ''
 page:
-  403: /node
-  404: /node
+  403: ''
+  404: ''
   front: /node
 admin_compact_mode: false
 weight_select_max: 100

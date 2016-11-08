@@ -1,9 +1,10 @@
-uuid: 497b70e1-1554-45c3-a46b-34c095754460
+uuid: f428832d-9671-44c9-bae4-b3647f9abb78
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.user.user.user_picture
+    - image.style.thumbnail
   module:
     - image
     - user
@@ -17,11 +18,11 @@ content:
   member_for:
     weight: 5
   user_picture:
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: content
     type: image
-    weight: 6
+    weight: 0
+    settings:
+      image_style: thumbnail
+      image_link: content
     third_party_settings: {  }
+    label: hidden
 hidden: {  }

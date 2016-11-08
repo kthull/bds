@@ -1,4 +1,4 @@
-uuid: cf933ca8-6bad-49ab-8698-58c31f9b1657
+uuid: 852ad150-5a6f-41c9-a57d-0ecb4ac21745
 langcode: en
 status: true
 dependencies:
@@ -18,8 +18,8 @@ mode: teaser
 content:
   body:
     label: hidden
-    weight: 0
     type: text_summary_or_trimmed
+    weight: 100
     settings:
       trim_length: 600
     third_party_settings: {  }

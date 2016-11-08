@@ -1,4 +1,4 @@
-uuid: ad3ebaf0-b775-4b6a-a361-35e6a1ff41b1
+uuid: f5ac061c-ea1a-4f18-9b91-5285fc89f202
 langcode: en
 status: true
 dependencies:
@@ -24,10 +24,10 @@ content:
   timezone:
     weight: 6
   user_picture:
+    type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    type: image_image
-    weight: 7
     third_party_settings: {  }
+    weight: -1
 hidden: {  }
