@@ -3,8 +3,8 @@ name: 'Blue Drop Shop'
 mail: kthull@bluedropshop.com
 slogan: ''
 page:
-  403: ''
-  404: ''
+  403: /node
+  404: /node
   front: /node
 admin_compact_mode: false
 weight_select_max: 100
