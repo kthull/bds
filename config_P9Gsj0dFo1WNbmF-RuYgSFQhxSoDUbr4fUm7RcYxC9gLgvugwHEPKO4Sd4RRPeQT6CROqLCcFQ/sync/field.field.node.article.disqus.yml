@@ -1,0 +1,24 @@
+uuid: 32d6b9e9-246c-4696-8032-c01d57d4c185
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.disqus
+    - node.type.article
+  module:
+    - disqus
+id: node.article.disqus
+field_name: disqus
+entity_type: node
+bundle: article
+label: Disqus
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    status: false
+    identifier: ''
+default_value_callback: ''
+settings: {  }
+field_type: disqus_comment
